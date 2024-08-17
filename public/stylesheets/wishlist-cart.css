@@ -1,0 +1,98 @@
+#wishlist-items,
+#cart-items {
+  width: 790px;
+}
+
+#order-summary {
+  padding: 10px;
+  margin: 50px auto auto auto;
+}
+
+#wishlist-items thead th,
+#cart-items thead th {
+  font: 20px black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#wishlist-items tbody tr td,
+#cart-items tbody tr td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px;
+  font-size: 20px;
+}
+#order-items {
+  width: 80%;
+  margin-top: 25px;
+  border: 1px solid #bcb6b6;
+  padding: 10px;
+}
+
+#order-items tbody td {
+  padding: 5px;
+}
+
+#order-items tbody tr td:last-child {
+  text-align: end;
+}
+
+#order-items tbody tr:last-child {
+  font-weight: bold;
+}
+
+#wishlist-items tbody td img,
+#cart-items tbody td img {
+  border: 1px black solid;
+  border-radius: 50%;
+}
+
+/* This targets all buttons on the page */
+#wishlist-items tbody button,
+#cart-items tbody button {
+  background-color: #4caf50; /* Green color */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+}
+
+/* This targets the button when hovered over */
+#wishlist-items tbody button:hover,
+.btn .wishbtn:hover,
+.btn .cartbtn:hover,
+#cart-items tbody button:hover {
+  background-color: #ffffff; /* Darker green on hover */
+  color: black;
+}
+
+#order-summary {
+  margin: 50px auto auto auto;
+  width: 250px;
+}
+
+#order-items {
+  width: 100%;
+  /* margin-top: 25px; */
+  border: 1px solid #bcb6b6;
+}
+
+#order-items tbody td {
+  padding: 5px;
+}
+
+#order-items tbody tr td:last-child {
+  text-align: end;
+}
+
+#order-items tbody tr:last-child {
+  font-weight: bold;
+}
+
