@@ -19,5 +19,12 @@ pipeline{
                 bat 'docker tag foodstore-app amareshmaity/foodstore-app:latest'
             }
         }
+
+        stage('Push Image'){
+            steps{
+                bat 'docker login -u amareshmaity -p aS!PnJ7MDfCgxe9'
+                bat 'docker push amareshmaity/foodstore-app:latest'
+            }
+        }
     }
 }
