@@ -7,5 +7,5 @@ services:  # Define the services to be run
     ports:
       - "3000:3000"  # Map port 3000 of the container to port 3000 on the host
     environment:
-      - MONGO_URI=mongodb://mongo:27017/FoodDelivery?connectTimeoutMS=30000  # MongoDB connection string for the backend
+      - MONGO_URI=mongodb+srv://amareshmaity2002:X37tl4hLW7O8T86T@cluster0.g2ktfbf.mongodb.net/FoodDelivery?connectTimeoutMS=30000  # MongoDB connection string for the backend
       - NODE_ENV=development  # Set the Node.js environment to development
