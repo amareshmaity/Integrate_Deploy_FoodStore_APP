@@ -1,0 +1,11 @@
+version: '3.8'  # Specify the version of Docker Compose
+
+services:  # Define the services to be run
+  backend:  # Service name
+    build: .  # Build the Docker image from the current directory
+    image: FoodStore-app:latest  # Tag the built image as 'FoodStore-app:latest'
+    ports:
+      - "3000:3000"  # Map port 3000 of the container to port 3000 on the host
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/FoodDelivery?connectTimeoutMS=30000  # MongoDB connection string for the backend
+      - NODE_ENV=development  # Set the Node.js environment to development
