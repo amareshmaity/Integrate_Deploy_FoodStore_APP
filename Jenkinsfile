@@ -13,5 +13,11 @@ pipeline{
                 bat 'docker-compose build --no-cache'
             }
         }
+
+        stage('Tag Image'){
+            steps{
+                bat 'docker tag foodstore-app amareshmaity/foodstore-app:latest'
+            }
+        }
     }
 }
