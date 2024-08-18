@@ -37,7 +37,7 @@ pipeline{
             steps{
                 bat """
                 ssh -i ${SSH_KEY_PATH} -o StrictHostKeyChecking=no ${SSH_USER}@${SSH_HOST} ^
-                "docker stop foodstore-app || true && docker rm foodstore-app || true && docker rmi amareshmaity/foodstore-app:latest && docker pull amareshmaity/foodstore-app:latest && docker run -d --name foodstore-app -p 3000:3000 amareshmaity/foodstore-app:latest
+                "docker stop foodstore-app || true && docker rm foodstore-app || true && docker rmi amareshmaity/foodstore-app:latest && docker pull amareshmaity/foodstore-app:latest && docker run --name foodstore-app -p 3000:3000 amareshmaity/foodstore-app:latest
                 """
             }
         }
