@@ -2,9 +2,9 @@ pipeline{
     agent any
 
     environment{
-        SSH_KEY_PATH='"D:\\Learning\\Coding\\Web Development\\My Tutorial\\Integrate and Deploy MEAN APP on Cloud\\Integrate_Deploy_FoodStore_APP\\food-store-ec2-login1.pem"'
+        SSH_KEY_PATH='D:\\food-store-ci-cd-ec2-login.pem'
         SSH_USER='ec2-user'
-        SSH_HOST='54.81.241.99'
+        SSH_HOST='52.90.209.81'
     }
 
     stages{
