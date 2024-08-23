@@ -1,3 +1,7 @@
+console.log("Script loaded successfully");
+
+document.addEventListener("DOMContentLoaded", function () {});
+
 // add to wishlist
 function addWishList(button, queryParams) {
   const classes = button.classList;

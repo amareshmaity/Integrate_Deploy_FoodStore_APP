@@ -2,9 +2,9 @@ pipeline{
     agent any
 
     environment{
-        SSH_KEY_PATH='D:\\food-store-ci-cd-ec2-login.pem'
+        SSH_KEY_PATH='D:\\food-store-app-ec2-login.pem'
         SSH_USER='ec2-user'
-        SSH_HOST='52.90.209.81'
+        SSH_HOST='3.239.216.89'
     }
 
     stages{
